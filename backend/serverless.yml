@@ -1,7 +1,7 @@
 # TODO: Change the name of the org
 org: cuongdeveloper19
-app: serverless-todo-app
-service: serverless-todo-app
+app: capstone-todo-app
+service: capstone-todo-app
 
 plugins:
   - serverless-webpack
@@ -27,7 +27,7 @@ provider:
   environment:
     TODOS_TABLE: Todos-${self:provider.stage}
     TODOS_CREATED_AT_INDEX: CreatedAtIndex
-    ATTACHMENT_S3_BUCKET: cuongdq19-serverless-todo-app-${self:provider.stage}
+    ATTACHMENT_S3_BUCKET: cuongdq19-capstone-todo-app-${self:provider.stage}
     SIGNED_URL_EXPIRATION: 300
     AUTH_JWKS_URL: 'https://dev-483tvl5jbqbq60kh.us.auth0.com/.well-known/jwks.json'
 
@@ -59,8 +59,8 @@ custom:
     api:
       info:
         version: v1.0.0
-        title: Udagram API
-        description: Todos Serverless application
+        title: Todos API
+        description: Todos Udagram Capstone application
 
     models:
       - name: CreateTodoModel
